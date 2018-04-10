@@ -1,6 +1,10 @@
 # Fem Downloader 
 Minimal Downloader for frontendmasters.com's courses
 
+# Requirements
+- Node 9+
+- A free frontendmasters.com's account ( Or membership account to download courses that not free xD )
+
 # Install 
 
 ```bash
