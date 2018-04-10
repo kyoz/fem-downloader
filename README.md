@@ -23,7 +23,7 @@ You can use these arguments to custom your download:
 - **s ( skip )**: To skip video. Default: 0
 - **f ( format )**: Video format types ( webm or mp4 ). Default: 'webm'
 - **r ( resolution )**: Resolution of video ( 720 or 1080 ). Default: '1080'
-- **d ( dest )**: Destination download folder
+- **d ( dest )**: Destination download folder. (Default download folder is in 'Downloaded' in this project folder')
 
 ex.
 ```bash

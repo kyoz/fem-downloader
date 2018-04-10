@@ -1,7 +1,7 @@
 {
   "name": "fem-downloader",
   "description": "Use to dowload video on frondendmasters.com",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "author": "Kyoz <banminkyoz@gmail.com> (github.com/banminkyoz)",
   "license": "MIT",
   "repository": {
@@ -10,7 +10,10 @@
   },
   "keywords": [
     "frondendmaster",
-    "downloader"
+    "frondendmasters.com",
+    "frontendmaster downloader",
+    "frontendmasters.com downloader",
+    "pom downloader"
   ],
   "bugs": {
     "url": "https://github.com/banminkyoz/fem-downloader/issues"
