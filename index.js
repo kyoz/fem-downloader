@@ -6,7 +6,7 @@ args
   .option('pass', 'Password')
   .option('course', 'Slug for the course download (ex.: web-performance for https://frontendmasters.com/courses/web-performance/')
   .option('skip', 'Number of videos to skip', 0)
-  .option('dest', 'Download destination folder')
+  .option('dest', 'Destination download folder')
   .option('format', 'webm or mp4', 'webm')
   .option('resolution', '720 or 1080', 1080);
 
@@ -21,7 +21,7 @@ async function run(options) {
     format,
     resolution,
   } = options;
-  const client = new FemDowloaderClient(format, resolution, drive, parent);
+  const client = new FemDowloaderClient(format, resolution, dest);
   const authed = await client.authenticate(user, pass);
   if (authed) {
     log(` > ${user} logged in successful.`);

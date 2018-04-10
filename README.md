@@ -20,14 +20,17 @@ Minimal Downloader for frontendmasters.com's courses
 # Custom Usage
 
 You can use these arguments to custom your download:
-- **skip**: To skip video. Default: 0
-- **format**: Video format types ( webm or mp4 ). Default: 'webm'
-- **resolution**: Resolution of video ( 720 or 1080 ). Default: '1080'
+- **s ( skip )**: To skip video. Default: 0
+- **f ( format )**: Video format types ( webm or mp4 ). Default: 'webm'
+- **r ( resolution )**: Resolution of video ( 720 or 1080 ). Default: '1080'
+- **d ( dest )**: Destination download folder
 
 ex.
 ```bash
   # Skip 3 videos, start download at fourth video
-  node index -u [username/email] -p [password] -c [slugName] --skip 3 
+  node index -u banminkyoz@gmail.com -p 123456 -c [slugName] --s 3 
   # Set format type and resolution
-  node index -u [username/email] -p [password] -c [slugName] --format mp4 --resolution 720 
+  node index -u banminkyoz@gmail.com -p 123456 -c [slugName] --f mp4 --r 720
+  # Download to a specific folder
+  node index -u banminkyoz@gmail.com -p 123456 -d '/Users/Kyoz/Downloads'
 ```
