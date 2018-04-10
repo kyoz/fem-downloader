@@ -103,7 +103,7 @@ class Client {
     let total = 0;
     read.on('data', ({ length }) => {
       process.stdout.write(
-        `  -> ${filename}: ${(total += length)} bytes downloaded \r`
+        `  -> ${filename}: ${this.formatBytes(total += length, 2)} bytes downloaded \r`
       );
     });
     return new Promise(resolve => {
@@ -136,6 +136,9 @@ class Client {
     if (!_fs.existsSync(path)) _mkdirp.sync(path);
     return read.pipe(_fs.createWriteStream(_path.resolve(path, filename)));
   }
+
+  formatBytes(a,b){if(0==a)return"0 Bytes";var c=1024,d=b||2,e=["Bytes","KB","MB","GB","TB","PB","EB","ZB","YB"],f=Math.floor(Math.log(a)/Math.log(c));return parseFloat((a/Math.pow(c,f)).toFixed(d))+" "+e[f]}
+
 }
 
 module.exports = Client;
