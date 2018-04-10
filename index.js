@@ -28,7 +28,7 @@ async function run(options) {
     const data = await client.downloadCourseInfo(course);
     log(` > "${data.title}" is starting to download...`);
     client.skipLessons(skip);
-    log(` > Downloading ${client.downloadQueue.length} videos`);
+    log(` > Downloading ${client.downloadQueue.length} videos  ( to "${dest ? dest : 'Downloaded'}" )`);
     await client.downloadCourse();
   } else {
     log(' > Authentication failed');

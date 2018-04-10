@@ -18,7 +18,6 @@ class Client {
     this.format = format;
     this.resolution = resolution;
     this.dest = dest;
-    console.log(dest)
   }
 
   async authenticate(username, password) {
