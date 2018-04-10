@@ -1,0 +1,30 @@
+{
+  "name": "fem-downloader",
+  "description": "Use to dowload video on frondendmasters.com",
+  "version": "0.0.1",
+  "author": "Kyoz <banminkyoz@gmail.com> (github.com/banminkyoz)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/banminkyoz/fem-downloader.git"
+  },
+  "keywords": [
+    "frondendmaster",
+    "downloader"
+  ],
+  "bugs": {
+    "url": "https://github.com/banminkyoz/fem-downloader/issues"
+  },
+  "homepage": "https://github.com/banminkyoz/fem-downloader#readme",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "args": "^4.0.0",
+    "dotenv": "^5.0.1",
+    "mkdirp": "^0.5.1",
+    "request": "^2.85.0",
+    "sanitize-filename": "^1.6.1"
+  }
+}
