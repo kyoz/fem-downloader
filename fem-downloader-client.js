@@ -103,7 +103,7 @@ class Client {
     let total = 0;
     read.on('data', ({ length }) => {
       process.stdout.write(
-        `  -> ${filename}: ${this.formatBytes(total += length, 2)} bytes downloaded \r`
+        `  -> ${filename}: ${this.formatBytes(total += length, 2)} downloaded    \r`
       );
     });
     return new Promise(resolve => {
