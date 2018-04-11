@@ -92,7 +92,7 @@ class Client {
     }
     const ix = this.lessonData[lesson].index + 1;
     const filename = _sanitize(
-      `${ix < 10 ? '0' : ''}${ix}.${this.lessonData[lesson].title}.${format}`
+      `${ix < 10 ? '0' : ''}${ix}. ${this.lessonData[lesson].title}.${format}`
     );
 
     const read = _request({
