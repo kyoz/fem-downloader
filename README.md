@@ -1,5 +1,7 @@
 # Fem Downloader 
-Minimal Downloader for frontendmasters.com's courses
+Simple Downloader for frontendmasters.com's courses to watch offline
+
+![](images/demo.png)
 
 # Requirements
 - Node 9+
@@ -21,6 +23,21 @@ Minimal Downloader for frontendmasters.com's courses
   node index -u [username/email] -p [password] -c [slugName]
 ```
 
+# Examples
+
+```bash
+node index -u banminkyoz@gmail.com -p 123456 -c javascript-basics
+```
+
+With:
+
+- Email: banminkyoz@gmail.com
+- Password: 123456
+- SlugName: javascript-basics
+
+:warning: slugName must be correct or else the downloader will not work. ex: with [https://frontendmasters.com/courses/javascript-basics/](https://frontendmasters.com/courses/javascript-basics/) the slugName must be `javascript-basics` (without slash)
+
+
 # Custom Usage
 
 You can use these arguments to custom your download:
@@ -29,7 +46,7 @@ You can use these arguments to custom your download:
 - **r ( resolution )**: Resolution of video ( 720 or 1080 ). Default: '1080'
 - **d ( dest )**: Destination download folder. (Default download folder is in 'Downloaded' in this project folder')
 
-ex.
+ex:
 ```bash
   # Skip 3 videos, start download at fourth video
   node index -u banminkyoz@gmail.com -p 123456 -c [slugName] --s 3 
