@@ -1,6 +1,10 @@
 # Fem Downloader 
 Simple Downloader for frontendmasters.com's courses to watch offline
 
+# Use it as your own risk
+- Time passed and things changed. I'v write this about 2 years ago and i'm no longer using this. I just now that at the moment, Frontend Master will ban account that trying to download their video. [View this issue](https://github.com/kyoz/fem-downloader/issues/1)
+- I recommend using their app on mobile to download their videos and watch offine if you'd like.
+
 ![](images/demo.png)
 
 # Requirements
